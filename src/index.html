@@ -6,80 +6,92 @@
     <link rel="stylesheet" href="../dist/output.min.css">
     <title>Tailwind</title>
 </head>
-<body class="bg-beige flex flex-col items-center m-0 box-border font-jakarta">
+<body class="bg-beige items-center m-0 box-border font-jakarta">
 
   <!-- header -->
-  <header class="container auto flex flex-row justify-between items-center py-8 px-5 lg:px-0">
+  <header class="container mx-auto flex flex-row justify-between items-center py-8 px-5 lg:px-0">
     <img src="img/logo.jpg" alt="">
-    <a href="#" class=" font-medium text-button text-white bg-black px-10 py-3 rounded-full">Free Consultation</a>
+    <a href="#" class=" font-medium text-button text-white bg-black hover:bg-purple px-10 py-3 rounded-full">Free Consultation</a>
   </header>
   <!-- fin header -->
 
 
-  <main class="container auto">
+  <main>
     <!-- section 1 -->
-    <section class="py-8 text-center px-5 lg:px-0">
-      <h1 class=" font-bold text-large">Design solutions made easy</h1>
-      <p class=" font-light text-xsmall text-gray py-3">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
+    <section class="container mx-auto py-8 text-center px-5 lg:px-0">
+      <h1 class=" font-bold text-large">Design solutions <br class="block lg:hidden"> made easy</h1>
+      <p class=" font-normal text-xsmall text-gray py-3">With over ten years of experience in various design disciplines, I’m your one-stop shop for your design needs.</p>
     </section>
     <!-- fin section 1 -->
 
 
     <!-- section 2 -->
-    <section class="py-8 px-5 lg:px-0 flex flex-col lg:flex-row justify-between items-center">
 
-      <div class="bg-purple w-[100%] lg:w-[30%] h-[15vh] lg:h-[35vh] rounded-lg flex items-end p-4 my-8 lg:my-0"><p class="font-bold text-white text-[24px]">Graphic Design</p></div>
-      <div class="w-[100%] lg:w-[30%] h-[35vh] flex flex-col justify-between">
-        <div class="flex flex-row h-[45%] justify-between">
-          <div class="bg-orange w-[45%] rounded-lg flex items-end p-4"><p class="font-bold text-white text-[24px]">UI/UX</p></div>
-          <div class="bg-pink w-[45%] rounded-lg flex items-end p-4"><p class="font-bold text-white text-[24px]">Apps</p></div>
-        </div>
-
-        <div class="bg-red h-[45%] rounded-lg flex items-end p-4">
-          <p class="font-bold text-white text-[24px] ">Illustrations</p>
-        </div>
-
-      </div>
-      <div class="w-[100%] lg:w-[30%] h-[35vh] flex flex-col justify-between my-8 lg:my-0">
-        <div class="bg-blue h-[45%] rounded-lg flex items-end p-4">
-          <p class="font-bold text-white text-[24px]">Photography</p>
-        </div>
-        <div class="bg-darkpurple h-[45%] rounded-lg flex items-end p-4">
-          <p class="font-bold text-white text-[24px]">Motion Graphics</p>
-        </div>
-      </div>
-
-    </section >
+    <section class="container mx-auto py-8 px-5 lg:px-0 grid grid-rows-6 lg:grid-rows-2 grid-cols-2 lg:grid-cols-6 gap-5 h-[100vh] lg:h-[40vh]">
+      <div class="row-span-2 col-span-2 bg-purple rounded-lg flex items-end"><p class="font-bold text-white text-[24px] p-4">Graphic Design</p></div>
+      <div class="row-span-1 col-span-1 bg-orange rounded-lg flex items-end"><p class="font-bold text-white text-[24px] p-4">UI/UX</p></div>
+      <div class="row-span-1 col-span-1 bg-pink rounded-lg flex items-end"><p class="font-bold text-white text-[24px] p-4">Apps</p></div>
+      <div class="row-span-1 col-span-2 bg-blue rounded-lg flex items-end"><p class="font-bold text-white text-[24px] p-4">Photography</p></div>
+      <div class="row-span-1 col-span-2 bg-red rounded-lg flex items-end"><p class="font-bold text-white text-[24px] p-4">Illustrations</p></div>
+      <div class="row-span-1 col-span-2 bg-darkpurple rounded-lg flex items-end"><p class="font-bold text-white text-[24px] p-4">Motion Graphics</p></div>
+    </section>
     <!-- fin section 2 -->
-
-
-    <!-- section grid -->
-    <!-- <section class="py-8 px-5 lg:px-0 grid grid-cols-3 gap-20">
-
-      <div class="bg-purple w-[100%] h-[15vh] lg:h-[35vh] rounded-lg flex items-end p-4 my-8 lg:my-0"><p class="font-bold text-white text-[24px]">Graphic Design</p></div>
-      <div class="w-[100%] h-[15vh] bg-red">sd</div>
-      <div class="w-[100%] h-[15vh] bg-red">sd</div>
-     
-
-    </section > -->
-    <!-- fin section grid -->
     
 
     <!-- section 3 -->
-    <section class="py-8 px-5 lg:px-0 flex flex-col lg:flex-row justify-between items-center">
+    <section class="container mx-auto py-5 lg:py-20 px-5 lg:px-0 text-center lg:text-left flex flex-col lg:flex-row justify-between items-center">
       
-      <img src="img/amy.png" alt="">
+      <img src="img/amy.png" alt="" class="lg:w-[30%] py-20 lg:py-0">
 
-      <div>
+      <div class="lg:w-[40%]">
         <h1 class="font-bold text-medium">I’m Amy, and I’d love to work on your next project</h1>
-        <p class=" font-light text-xsmall text-gray py-3">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
-        <a href="#" class=" font-medium text-button text-white bg-red px-10 py-3 rounded-full">Free Consultation</a>
+        <p class=" font-normal text-xsmall text-gray my-10">I love working with others to create beautiful design solutions. I’ve designed everything from brand illustrations to complete mobile apps. I’m also handy with a camera!</p>
+        <a href="#" class=" font-medium text-button text-white bg-red px-10 py-3 rounded-full hover:bg-orange">Free Consultation</a>
       </div>
 
     </section>
     <!-- fin section 3 -->
 
+
+    <!-- section 4 -->
+    <section class="flex flex-col items-center">
+
+      <h1 class="font-bold text-medium py-10">My Work</h1>
+
+      <div class="flex flex-row justify-between">
+   <div>     <img src="img/work1.jpg" alt="" class="rounded-lg"></div>
+      <div>  <img src="img/work2.jpg" alt="" class="rounded-lg"></div>
+       <div> <img src="img/work3.jpg" alt="" class="rounded-lg"></div>
+      </div>
+
+      <div class="flex flex-row py-10">
+        <a href=""><img src="img/left.png" alt=""></a>
+        <a href=""><img src="img/right.png" alt=""></a>
+      </div>
+
+    </section>
+    <!-- fin section 4 -->
+
+
+
+    <!-- section 5 -->
+    <section class="container mx-auto my-8 p-10 lg:p-20 bg-black rounded-lg flex flex-col lg:flex-row justify-between items-center">
+      <div class="w-[100%] lg:w-[45%] text-center lg:text-left">
+        <h1 class="font-bold text-medium text-white">Book a call with me</h1>
+        <p class="font-normal text-xsmall text-white py-6 lg:py-0">I’d love to have a chat to see how I can help you. The best first step is for us to discuss your project during a free consultation. Then we can move forward from there.</p>
+      </div>
+
+      <a href="#" class=" font-medium text-button text-white bg-red px-10 py-3 rounded-full hover:bg-orange">Free Consultation</a>
+    </section>
+    <!-- fin section 5 -->
+
   </main>
+
+
+  <footer class="container mx-auto flex flex-row justify-between items-center py-8 px-5 lg:px-0">
+    <img src="img/logo.jpg" alt="">
+    <a href="#" class=" font-medium text-button text-white bg-black hover:bg-purple px-10 py-3 rounded-full">Free Consultation</a>
+  </footer>
 
 </body>
 </html>

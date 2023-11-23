@@ -26,7 +26,7 @@ module.exports = {
       'large':'56px',
     },
     fontWeight: {
-      'light': 500,
+      'normal': 500,
       'bold': 700,
     }
   },
